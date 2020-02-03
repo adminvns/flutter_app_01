@@ -5,12 +5,17 @@ void main()
 {
 
   runApp(
-    
-        Text(
+
+      Center(
+
+        child: Text(
 
             "Hello Flutter",
             textDirection: TextDirection.ltr
 
-        )
+        ),
+
+      ) //center
+
   );
 }
