@@ -6,16 +6,24 @@ void main()
 
   runApp(
 
-      Center(
+      MaterialApp(
+          title: "Flutter App",
+          home: Scaffold(
+            appBar: AppBar(
+                title: Text("Admin"), backgroundColor: Colors.black26),
+            body: Material(
+              color: Colors.lightBlueAccent,
+              child: Center(
 
-        child: Text(
+                child: Text(
 
-            "Hello Flutter",
-            textDirection: TextDirection.ltr
-
-        ),
-
-      ) //center
-
+                  "Hello ji",
+                  textDirection: TextDirection.ltr,
+                  style: TextStyle(color: Colors.white, fontSize: 40.0),
+                ),
+              ),
+            ),
+          )
+      )
   );
 }
